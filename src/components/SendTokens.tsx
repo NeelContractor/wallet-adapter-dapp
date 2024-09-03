@@ -24,26 +24,26 @@ export default function SendTokens() {
     }
 
     return (
-        <div className="grid my-2 mt-10 border-t p-2">
+        <div className="grid p-2 m-10">
             <h3 className="text-3xl font-mono text-red-600">Send Solana</h3>
             <input 
-            value={toPubkey} 
-            type="text" 
-            className="bg-cyan-950 my-2 py-2 pl-5"
-            onChange={e => {
-                setToPubkey(e.currentTarget.value)
-            }} 
+                value={toPubkey} 
+                type="text" 
+                className="bg-cyan-950 my-2 py-2 pl-5"
+                onChange={e => {
+                    setToPubkey(e.currentTarget.value)
+                }} 
             placeholder="To" />
             <input 
-            value={amountToSend} 
-            type="text" 
-            className="bg-cyan-950 my-2 py-2 pl-5"
-            onChange={e => {
-                setAmountToSend(e.currentTarget.value)
-            }} 
+                value={amountToSend} 
+                type="text" 
+                className="bg-cyan-950 my-2 py-2 pl-5"
+                onChange={e => {
+                    setAmountToSend(e.currentTarget.value)
+                }} 
             placeholder="Amount" />
             <button 
-            className="border p-2 "
+                className="border p-2 border-gray-700"  
             onClick={sendTokens}>Send</button>
         </div>
     )

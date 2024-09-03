@@ -17,7 +17,7 @@ export default function RequestAirdrop() {
     }
 
     return (
-        <div className="grid mt-10 border-t p-2">
+        <div className="grid p-2 m-10">
             <h3 className="text-3xl font-mono text-red-600">Request Airdrop</h3>
             <input 
             type="number" 
@@ -27,7 +27,7 @@ export default function RequestAirdrop() {
             placeholder="Amount"
             className="py-2 bg-cyan-950 pl-5" />
             <button 
-            className="border p-2 font-bold mt-2"
+            className="border border-gray-700 p-2 font-bold mt-2"
             onClick={requestAirdrop}
             >Request Airdrop</button>
         </div>

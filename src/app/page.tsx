@@ -13,13 +13,14 @@ export default function Home() {
       <ConnectionProvider endpoint="https://solana-devnet.g.alchemy.com/v2/3eTxAn-YxaAwgdRbpZSnwqu4YcURHS9L">
           <WalletProvider wallets={[]} autoConnect>
             <WalletModalProvider>
-              <div className="grid p-2 border border-gray-700 m-20 mx-80 py-10 justify-center">
+              <div className="m-20 "> 
                 <WalletMultiButton />
-                {/* <WalletDisconnectButton /> */}
-                <ShowBalance />
-                <RequestAirdrop />
-                <SignMessage />
-                <SendTokens />
+                <div className="mt-2">
+                  <ShowBalance />
+                  <SignMessage />
+                  <RequestAirdrop />
+                  <SendTokens />
+                </div>
               </div>
             </WalletModalProvider>
           </WalletProvider>
