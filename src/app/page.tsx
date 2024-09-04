@@ -10,7 +10,7 @@ import '@solana/wallet-adapter-react-ui/styles.css';
 export default function Home() {
   return (
     <div>
-      <ConnectionProvider endpoint="https://solana-devnet.g.alchemy.com/v2/3eTxAn-YxaAwgdRbpZSnwqu4YcURHS9L">
+      <ConnectionProvider endpoint="">
           <WalletProvider wallets={[]} autoConnect>
             <WalletModalProvider>
               <div className="m-20 "> 
